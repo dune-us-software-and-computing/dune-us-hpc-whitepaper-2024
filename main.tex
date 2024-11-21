@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{fancyhdr}
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage{url}
+\usepackage{makecell}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\title{DUNE LCF White Paper}
+\author{DUNE people}
+\date{November 2024}
+
+
+\begin{document}
+
+%\end{abstract}
+
+\maketitle
+\abstract{
+The Deep Underground Neutrino Experiment is going to do a lot of amazing things. It needs a lot of computing such as at the LCF machines. In this paper we briefly describe DUNE, its computing infrastructure, and summarize our use cases for LCF machines.}
+
+\section{Introduction\label{sec:intro}}
+A well-written introduction goes here.
+\subsection{Introduction to DUNE\label{sub:duneintro}}
+Briefly describe DUNE, its science goals, and the detectors at a high level. probably no more than one page is needed, perhaps two.
+\subsection{DUNE software and computing \label{sub:dunesw}}
+describe the current setup of software and computing, with primary focus on job submission, workflow management, data management, required services
+\subsubsection{Job submission\label{sub:jobsub}}
+
+\subsubsection{Workflow management\label{sub:workflow}}
+
+\subsubsection{Data management\label{sub:dm}}
+
+\subsubsection{Standard services\label{sub:services}}
+List things like Rucio, metacat, databases, CVMFS
+
+
+\section{Use cases involving GPUs\label{sec:gpu}}
+Lots of cool things for which we need many GPUs
+\subsection{ND}\label{sub:ND}
+stuff
+\subsection{FD accelerated components\label{sub:FD}}
+more stuff
+
+\section{Large-scale MPI processing needs\label{sec:mpi}}
+talk about systematics variations and FC fits on large datasets
+
+\section{other stuff\label{sec:other}}
+whatever else we didn't talk about yet.
+\subsection{Supernova burst processing\label{sub:sn}}
+discuss rough CPU estimate, data sizes, focus on redundancy issues and ensuring we have multiple places to run in case of multiple outages at the time of an event.
+
+
+\section{Conclusions}\label{sec:conc}
+\end{document}
